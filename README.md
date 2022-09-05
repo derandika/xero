@@ -10,7 +10,7 @@ Following changes made to Refactor the Code.
 
        Xero.Repository – Class library project to implement unit of work repository pattern data access layer.
 
-2. Within the API controller split the product and product option api methods in to separate controllers. 
+2. Within the API controller project split the product and product option api methods in to separate controllers. 
 
 3. Implemented the UnitOfWork Repository pattern for generic crud operations with entity framework for data access layer. 
 
