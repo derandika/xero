@@ -14,15 +14,15 @@ Following changes made to Refactor the Code.
 
 3. Implemented the UnitOfWork Repository pattern for generic crud operations with entity framework for data access layer. 
 
-4. Replace the inline SQL commands with linq queries to avoid any potential sql injection security issues.
+4. Replaced inline SQL commands with linq queries to avoid any potential sql injection security issues.
 
-5. Move the db connection string in to appsettings.json
+5. Moved the db connection string in to appsettings.json
 
-6. Create separate model classes for product and productoptions, moved these into domain project. This will add structure into the solution and support domain driven design.    
+6. Created separate model classes for product and productoptions, moved these into domain project. This will add structure into the solution and support domain driven design.    
 
-7. Refactor the crud operations with generic repository and removed the repeated code for products, productoption data access.
+7. Refactor crud operations with generic repository and removed the repeated code for products, productoption data access.
 
-8. Refactor the code to use dependency injection to remove tight coupling. UnitOfWork dependency injected via the .net core configure services.
+8. Added dependency injection to remove tight coupling. UnitOfWork dependency injected via the .net core configure services.
 
        
 
