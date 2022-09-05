@@ -1,13 +1,14 @@
 # xero
 
-Following Changes made to Refactor the Code. 
+Following changes made to Refactor the Code. 
+
 1. Restructure the Solution into following projects to improve the overall design of the API solution. This enhances the readability and maintenance of the code base.
 
-Xero.Api –API project that contains the api controllers and aspnetcore middleware for request handling.
+       Xero.Api â€“ API project that contains the api controllers and aspnetcore middleware for request handling.
 
-Xero.Domain – Class library project for Domain model classes. Product, ProductOption etc.
+       Xero.Domain â€“ Class library project for Domain model classes. Product, ProductOption etc.
 
-Xero.Repository – Class library project to implement unit of work repository pattern data access layer.
+       Xero.Repository â€“ Class library project to implement unit of work repository pattern data access layer.
 
 2. Within the API controller split the product and product option api methods in to separate controllers. 
 
@@ -19,7 +20,7 @@ Xero.Repository – Class library project to implement unit of work repository pat
 
 6. Create separate model classes for product and productoptions, moved these into domain project. This will add structure into the solution and support domain driven design.    
 
-7. Refactor the crud operations with generic repository and removed the repeated code for products and productoption data access.
+7. Refactor the crud operations with generic repository and removed the repeated code for products, productoption data access.
 
 8. Refactor the code to use dependency injection to remove tight coupling. UnitOfWork dependency injected via the .net core configure services.
 
